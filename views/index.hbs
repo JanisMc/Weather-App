@@ -1,0 +1,26 @@
+<div class = "main">
+    <div class = "header"></div>
+    <div class = "content">    
+        <br>
+    <form action="/" method="post">
+            City: <input type="text" name = "city">
+            Country Code: <input type="text" name = "countryCode">
+            <br>
+            <br>
+            <input class = "button" type="submit" value = "Get Weather">
+    </form>
+        <h1>Current Weather</h1>
+        <p>City: {{info.city}}</p>
+        <p>Weather: {{info.weather}}</p>
+        <p>Temp: {{info.temp}}°C</p>
+        <p>Feels like: {{info.feelslike}}°C</p>
+        <p>Humidity: {{info.humidity}}%</p>
+        <p>Wind Speed: {{info.windspeed}}km/h</p>
+        <p>Wind Direction: {{windDir}}</p>
+    </div>
+
+</div>
+
+{{!-- action location on server
+method type of request --}}
+
